@@ -1,6 +1,6 @@
 package com.tech_challenge_04_payment.controller;
 
-import com.tech_challenge_04_payment.entity.CreatePaymentDto;
+import com.tech_challenge_04_payment.entity.dto.CreatePaymentDto;
 import com.tech_challenge_04_payment.entity.Payment;
 import com.tech_challenge_04_payment.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
