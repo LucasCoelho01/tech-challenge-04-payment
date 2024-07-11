@@ -1,13 +1,15 @@
 package com.tech_challenge_04_payment.entity;
 
+import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+
 
 @Data
-@Document(collection = "payments")
+@Entity
+@Table(name = "payments")
 public class Payment {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String orderId;
     private boolean isPaymentOk;
