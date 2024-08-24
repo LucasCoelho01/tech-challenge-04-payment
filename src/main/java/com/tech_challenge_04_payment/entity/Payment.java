@@ -12,5 +12,5 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String orderId;
-    private boolean isPaymentOk;
+    private boolean paymentOk;
 }

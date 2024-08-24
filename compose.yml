@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 5436:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+  api:
+    image: lucasgoleiro/techchallenge-payment-api
+    ports:
+      - 8083:8083
